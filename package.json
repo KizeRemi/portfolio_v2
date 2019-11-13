@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start -p $PORT",
     "storybook": "start-storybook -p 8080",
-    "build-storybook": "build-storybook -c .storybook"
+    "build-storybook": "build-storybook -c .storybook -o .out"
   },
   "dependencies": {
     "@storybook/addon-actions": "^5.2.6",
