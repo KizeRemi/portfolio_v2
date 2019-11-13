@@ -7,8 +7,10 @@
     "build": "next build",
     "start": "next start",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
-    "heroku-postbuild": "next build"
+    "build-storybook": "build-storybook"
+  },
+  "engines": {
+    "node": "10"
   },
   "dependencies": {
     "next": "9.1.3",
