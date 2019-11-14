@@ -1,6 +1,8 @@
 import React from 'react'
 import Head from 'next/head'
 import { StackCard } from '../components/Stacks';
+import BodyLayout from '../components/Layout/BodyLayout';
+import SectionHeader from '../components/Title/SectionHeader';
 
 const stacksList = [
   {
@@ -36,10 +38,13 @@ const Home = () => (
       <title>Home</title>
       <link rel='icon' href='/favicon.ico' />
     </Head>
+    <BodyLayout>
+      <SectionHeader title="J'ai travaillé pour" overlay="I have worked for" />
+      <div style={{ display: 'flex', justifyContent: 'space-between', margin: '12rem', flexWrap: 'wrap' }}>
+        {stacksList.map(stack => <StackCard {...stack} />)}
+      </div>
+    </BodyLayout>
 
-    <div style={{ display: 'flex', justifyContent: 'space-between', margin: '12rem', flexWrap: 'wrap' }}>
-      {stacksList.map(stack => <StackCard {...stack} />)}
-    </div>
   </div>
 )
 
