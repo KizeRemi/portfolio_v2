@@ -7,9 +7,12 @@
     "build": "next build",
     "start": "next start -p $PORT",
     "storybook": "start-storybook -s ./public -p 6006",
-    "build-storybook": "build-storybook -c .storybook -o static-storybook"
+    "build-storybook": "build-storybook -c .storybook -o storybook-static",
+    "heroku-postbuild": "npm run build && npm run build-storybook",
+    "prod-storybook": "node server.js"
   },
   "dependencies": {
+    "express": "^4.17.1",
     "next": "9.1.3",
     "react": "16.11.0",
     "react-dom": "16.11.0",
