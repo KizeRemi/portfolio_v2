@@ -1,4 +1,5 @@
 import React from 'react';
+import { text } from "@storybook/addon-knobs";
 
 import SectionHeader from '../components/Title/SectionHeader';
 import BodyLayout from '../components/Layout/BodyLayout';
@@ -9,6 +10,6 @@ export default {
 
 export const SectionHeaderOverlay = () => (
   <BodyLayout>
-    <SectionHeader title="J'ai travaillé pour" overlay="I have worked for" />
+    <SectionHeader title={text('Title', 'J\'ai travaillé pour')} overlay={text('Overlay text', 'I have worked for')} />
   </BodyLayout>
 );

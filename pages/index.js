@@ -1,6 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
-import { StackCard } from '../components/Stacks';
+import { StackCard } from '../components/Stack';
 import BodyLayout from '../components/Layout/BodyLayout';
 import SectionHeader from '../components/Title/SectionHeader';
 

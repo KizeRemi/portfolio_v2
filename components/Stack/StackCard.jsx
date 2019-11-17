@@ -1,12 +1,12 @@
 import React from 'react';
 
-import StackCardLayout from './StackCardLayout';
+import CardLayout from '../Layout/CardLayout';
 import StackImageLayout from './StackImageLayout';
 import StackDescription from './StackDescription';
 import StackTitle from './StackTitle';
 
 const StackCard = ({ logo, name, description }) => (
-  <StackCardLayout>
+  <CardLayout padded centered maxWidth={290}>
     <StackImageLayout>
       <img src={logo} />
     </StackImageLayout>
@@ -14,7 +14,7 @@ const StackCard = ({ logo, name, description }) => (
     <StackDescription>
       {description} 
     </StackDescription>
-  </StackCardLayout>
+  </CardLayout>
 );
 
 export default StackCard;
