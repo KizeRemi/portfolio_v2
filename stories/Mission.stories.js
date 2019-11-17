@@ -42,7 +42,7 @@ export const MissionNoLogo = () => {
   réseaux sociaux) sur les artistes qu’ils
   produisent.`);
 
-  const description2 = text('Description 2', null);
+  const description2 = text('Description 2', '');
 
   return (
     <MissionCard

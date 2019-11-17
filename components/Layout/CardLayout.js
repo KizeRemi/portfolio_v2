@@ -1,13 +1,16 @@
 import styled from 'styled-components';
 
 const CardLayout = styled.div`
+  align-items: ${props => props.centered ? 'center' : 'left'};
+  flex-direction: ${props => props.row ? 'row' : 'column'};
   font-family: SFProDisplayMedium;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   display: flex;
-  flex-direction: ${props => props.row ? 'row' : 'column'};
-  align-items: ${props => props.centered ? 'center' : 'left'};
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: ${props => props.centered ? 'center' : 'left'};
   max-width: ${props => `${props.maxWidth}px` || '100%' };
   box-shadow: 10px 10px 36px 0px rgba(198,198,198, 0.5);
   border-radius: ${props => props.noLeftRadius ? '0 10px 10px 0' :  '10px'};

@@ -1,22 +1,21 @@
 import React from 'react';
-import CardLayout from '../Layout/CardLayout';
 import styled from 'styled-components';
+
+import { CompanyImage } from '../Company';
+import CardLayout from '../Layout/CardLayout';
 
 const GradientLayout = styled.div`
   background: linear-gradient(45deg, #5E50FF 20%, #EA74F4);
   padding: 1rem;
   flex: 1;
   color: white;
+  min-height: 270px; 
 `;
 const MissionImageLayout = styled.div`
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-`;
-
-const MissionImage = styled.img`
-  max-height: 95px;
 `;
 
 const MissionTitle = styled.h4`
@@ -49,7 +48,7 @@ const MissionCard = ({ company, duration, occupation, children, companyLogo }) =
     </GradientLayout>
     {companyLogo && (
       <MissionImageLayout>
-        <MissionImage src={companyLogo} alt="Company logo"/>
+        <CompanyImage src={companyLogo} alt="Company logo"/>
       </MissionImageLayout>
     )}
   </CardLayout>

@@ -1,15 +1,15 @@
 import React from 'react';
 
 import CardLayout from '../Layout/CardLayout';
-import StackImageLayout from './StackImageLayout';
+import ImageLayout from '../Layout/ImageLayout';
 import StackDescription from './StackDescription';
 import StackTitle from './StackTitle';
 
 const StackCard = ({ logo, name, description }) => (
   <CardLayout padded centered maxWidth={290}>
-    <StackImageLayout>
+    <ImageLayout colored>
       <img src={logo} />
-    </StackImageLayout>
+    </ImageLayout>
     <StackTitle>{name}</StackTitle>
     <StackDescription>
       {description} 

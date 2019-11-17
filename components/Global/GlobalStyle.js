@@ -6,6 +6,14 @@ const GlobalStyle = createGlobalStyle`
     src: url('fonts/SF-Pro-Display-Medium.otf');
     font-display: fallback;
   }
+
+  a {
+    text-decoration: none;
+    font-family: 'SFProDisplayMedium';
+  }
+  * {
+    border-box: box-sizing;
+  }
 `;
 
 export default GlobalStyle;
