@@ -1,5 +1,5 @@
 import React from 'react';
-import { number, array } from "@storybook/addon-knobs";
+import { number } from "@storybook/addon-knobs";
 
 import { CompanyBanner } from '../components/Company';
 

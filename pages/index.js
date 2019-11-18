@@ -2,7 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 import { StackCard } from '../components/Stack';
 import BodyLayout from '../components/Layout/BodyLayout';
-import SectionHeader from '../components/Title/SectionHeader';
+import Nav from '../components/Nav/Nav';
 
 const stacksList = [
   {
@@ -31,6 +31,24 @@ const stacksList = [
     description: `Pour mes bases de données, j’utilise du PostgreSQL avec la librairie Knex.`,
   },
 ];
+const menuConfig = [
+  {
+    href: '/',
+    label: 'Home',
+  },
+  {
+    href: '/project',
+    label: 'Projects',
+  },
+  {
+    href: '#',
+    label: 'Articles',
+  },
+  {
+    href: '#',
+    label: 'Contact',
+  },
+]
 
 const Home = () => (
   <div>
@@ -39,7 +57,7 @@ const Home = () => (
       <link rel='icon' href='/favicon.ico' />
     </Head>
     <BodyLayout>
-      <SectionHeader title="J'ai travaillé pour" overlay="I have worked for" />
+      <Nav items={menuConfig} />
       <div style={{ display: 'flex', justifyContent: 'space-between', margin: '12rem', flexWrap: 'wrap' }}>
         {stacksList.map(stack => <StackCard {...stack} />)}
       </div>
