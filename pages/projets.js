@@ -23,7 +23,7 @@ const menuConfig = [
 const Project = () => (
   <div>
     <Head>
-      <title>Projects</title>
+      <title>Projets</title>
       <link rel='icon' href='/favicon.ico' />
     </Head>
     <BodyLayout>

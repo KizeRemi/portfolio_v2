@@ -15,7 +15,7 @@ export const SocialNetworkList = () => {
   const socialNetworks = array('Add social networks (comma separator)', ['Facebook', 'Instagram']);
 
   return (
-    <Container centered gradient>
+    <Container centered gradient padded>
       <SocialNetwork socialNetworkLogo={LinkedinLogo} link="http://www.google.fr" label="Linkedin/KizeRemi" />
       <SocialNetwork socialNetworkLogo={GithubLogo} link="http://www.google.fr" label="Github/KizeRemi" />
       {socialNetworks.map(socialNetwork => (
@@ -29,7 +29,7 @@ export const SocialNetworkNoLabelList = () => {
   const socialNetworks = array('Add social networks (comma separator)', ['Facebook']);
 
   return (
-    <Container centered gradient>
+    <Container centered gradient padded>
       <SocialNetwork socialNetworkLogo={LinkedinLogo} link="http://www.google.fr" />
       <SocialNetwork socialNetworkLogo={GithubLogo} link="http://www.google.fr" />
       {socialNetworks.map(socialNetwork => (

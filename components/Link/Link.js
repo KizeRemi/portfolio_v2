@@ -5,6 +5,7 @@ const Link = styled.a`
   text-decoration: underline;
   color: ${props => (props.active && '#824ED4') || (props.default && '#82869F' ) || '#FFFFFF'};
   line-height: 10px;
+  letter-spacing: 0.55px;
 `;
 
 export default Link;

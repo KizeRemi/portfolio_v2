@@ -5,7 +5,7 @@ import { Container } from '../Layout';
 import { Link } from '../Link';
 
 const SocialNetwork = ({ socialNetworkLogo, link, label }) => (
-  <Container>
+  <Container padded>
     <Link href={link} target="_blank">
       <SocialNetworkImage src={socialNetworkLogo} />
     </Link>

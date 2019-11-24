@@ -9,6 +9,7 @@ const ImageLayout = styled.div`
   justify-content: center;
   background: ${props => props.colored ? 'linear-gradient(45deg, #D07FF3, #495BCB)' : 'black'};
   margin: 0.5rem 0;
+  flex: 1 33%;
 `;
 
 export default ImageLayout;

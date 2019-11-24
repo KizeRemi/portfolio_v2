@@ -5,11 +5,13 @@ import { Container } from '../Layout';
 import { Link } from '../Link';
 
 const Nav = ({ items }) => (
-  <Container>
+  <Container padded>
     {items.map(item => (
-      <NextLink href={item.href} active>
-        <Link>{item.label}</Link>
-      </NextLink>
+      <Container>
+        <NextLink href={item.href} active>
+          <Link>{item.label}</Link>
+        </NextLink>
+      </Container>
     ))}
   </Container>
 );
